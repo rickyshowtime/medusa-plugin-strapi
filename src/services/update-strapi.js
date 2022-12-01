@@ -412,7 +412,7 @@ class UpdateStrapiService extends BaseService {
         )
         console.log("Variant Strapi Id - ", response)
       }
-
+cp
       return variant
     } catch (error) {
       console.log("Failed to update product variant", data.id)
@@ -481,7 +481,7 @@ class UpdateStrapiService extends BaseService {
       method: "head",
       url: `${this.strapi_URL_STRING}/_health`,
     }
-    console.log("Checking strapi Health")
+    console.log("Checking strapi Health", this.strapi_URL_STRING)
     return axios(config)
       .then((res) => {
         if (res.status === 204) {
