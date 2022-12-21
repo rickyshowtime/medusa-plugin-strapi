@@ -520,7 +520,7 @@ cp
       })
       .catch((error) => {
         if (error) {
-          throw new Error("\nError while trying to login to strapi\n"+error)
+          console.error("\nError while trying to login to strapi\n"+error)
         }
       })
   }
